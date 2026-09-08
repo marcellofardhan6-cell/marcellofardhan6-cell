@@ -8,21 +8,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Generate galaga contribution graph
-        uses: archernedev/galaga-contribution-graph@v1
+        uses: Manikeshmk/galaga-contribution-graph@main
         with:
-          github_username: marcellofardhan6-cell
-          theme: dark
-          output_path: output/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy output
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Copy SVG to output dir
+        run: |
+          mkdir -p output
+          cp "${{ github.action_path }}/dist/galaga.svg" output/galaga-contribution-graph-dark.svg 2>/dev/null || true
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output
+          publish_branch: output
+          force_orphan: true
