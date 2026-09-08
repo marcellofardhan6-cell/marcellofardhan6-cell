@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <linearGradient id="sn-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#161B22"/>
+    </linearGradient>
+    <radialGradient id="sn-glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22D3EE;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="200" fill="url(#sn-bg2)" rx="12"/>
+  <rect x="1" y="1" width="898" height="198" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="450" y="30" text-anchor="middle" font-family="monospace" font-size="13" fill="#22D3EE">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    CONTRIBUTION SNAKE
+  </text>
+  <line x1="350" y1="40" x2="550" y2="40" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Contribution grid background -->
+  <g fill="#21262D">
+    <rect x="50" y="55" width="12" height="12" rx="2"/>
+    <rect x="66" y="55" width="12" height="12" rx="2"/>
+    <rect x="82" y="55" width="12" height="12" rx="2"/>
+    <rect x="98" y="55" width="12" height="12" rx="2"/>
+    <rect x="114" y="55" width="12" height="12" rx="2"/>
+    <rect x="130" y="55" width="12" height="12" rx="2"/>
+    <rect x="146" y="55" width="12" height="12" rx="2"/>
+    <rect x="50" y="71" width="12" height="12" rx="2"/>
+    <rect x="66" y="71" width="12" height="12" rx="2"/>
+    <rect x="82" y="71" width="12" height="12" rx="2"/>
+    <rect x="98" y="71" width="12" height="12" rx="2"/>
+    <rect x="114" y="71" width="12" height="12" rx="2"/>
+    <rect x="50" y="87" width="12" height="12" rx="2"/>
+    <rect x="66" y="87" width="12" height="12" rx="2"/>
+    <rect x="82" y="87" width="12" height="12" rx="2"/>
+    <rect x="98" y="87" width="12" height="12" rx="2"/>
+    <rect x="130" y="87" width="12" height="12" rx="2"/>
+    <rect x="50" y="103" width="12" height="12" rx="2"/>
+    <rect x="66" y="103" width="12" height="12" rx="2"/>
+    <rect x="98" y="103" width="12" height="12" rx="2"/>
+    <rect x="114" y="103" width="12" height="12" rx="2"/>
+    <rect x="50" y="119" width="12" height="12" rx="2"/>
+    <rect x="82" y="119" width="12" height="12" rx="2"/>
+    <rect x="98" y="119" width="12" height="12" rx="2"/>
+    <rect x="130" y="119" width="12" height="12" rx="2"/>
+    <rect x="50" y="135" width="12" height="12" rx="2"/>
+    <rect x="66" y="135" width="12" height="12" rx="2"/>
+    <rect x="98" y="135" width="12" height="12" rx="2"/>
+    <rect x="114" y="135" width="12" height="12" rx="2"/>
+    <rect x="146" y="135" width="12" height="12" rx="2"/>
+    <rect x="50" y="151" width="12" height="12" rx="2"/>
+    <rect x="82" y="151" width="12" height="12" rx="2"/>
+    <rect x="98" y="151" width="12" height="12" rx="2"/>
+  </g>
+
+  <!-- Snake -->
+  <g>
+    <rect x="50" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.4"/>
+    <rect x="66" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.5"/>
+    <rect x="82" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.6"/>
+    <rect x="98" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.7"/>
+    <rect x="114" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.8"/>
+    <rect x="130" y="55" width="12" height="12" rx="2" fill="#22D3EE" opacity="0.9"/>
+    <rect x="146" y="55" width="12" height="12" rx="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="158" y="55" width="12" height="12" rx="2" fill="#F59E0B">
+      <animate attributeName="opacity" values="1;0.7;1" dur="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="166" y="57" width="2" height="2" fill="#080B12"/>
+    <rect x="163" y="58" width="5" height="3" fill="#080B12">
+      <animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <ellipse cx="164" cy="61" rx="20" ry="22" fill="url(#sn-glow2)" opacity="0.15">
+      <animate attributeName="rx" values="20;26;20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.3;0.15" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-16,0;-16,16;-32,16;-48,16;-48,32;-32,32;-12,32;-12,48;0,48;16,48;32,48;48,48;48,64;32,64;16,64;0,64;0,80;16,80;32,80;48,80;48,96;32,96;16,96;0,96;0,0" dur="12s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="100" y="180" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748B">2023</text>
+  <text x="700" y="180" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748B">2026</text>
+  <text x="450" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">
+    <tspan fill="#22D3EE">Contributions</tspan>
+    <tspan dx="8" fill="#64748B">|</tspan>
+    <tspan dx="8">Dark theme</tspan>
+  </text>
+</svg>

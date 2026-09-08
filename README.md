@@ -21,9 +21,9 @@
 
   <!-- GALAGA CONTRIBUTION GRAPH -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/galaga-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/galaga-contribution-graph.svg" />
-    <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/galaga-contribution-graph-dark.svg" alt="Fardhan Galaga contribution graph" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph.svg" />
+    <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph-dark.svg" alt="Fardhan Galaga contribution graph" />
   </picture>
 
 </div>
@@ -130,9 +130,9 @@
 
   <!-- CONTRIBUTION SNAKE -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/snake-light.svg" />
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/output/snake-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/snake-light.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/snake-light.svg" />
   </picture>
 
 </div>
