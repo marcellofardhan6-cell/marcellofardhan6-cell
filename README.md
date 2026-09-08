@@ -19,19 +19,6 @@
 
 <div align="center">
 
-  <!-- GALAGA CONTRIBUTION GRAPH -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph.svg" />
-    <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/output/galaga-contribution-graph-dark.svg" alt="Fardhan Galaga contribution graph" />
-  </picture>
-
-</div>
-
-<br/>
-
-<div align="center">
-
   <!-- ANIMATED TECH STACK -->
   <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/tech-stack-animated.svg" alt="Fardhan Technology Arsenal" />
 
