@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="id-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="50%" style="stop-color:#0D1B2A"/>
+      <stop offset="100%" style="stop-color:#080B12"/>
+    </linearGradient>
+    <linearGradient id="id-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22D3EE;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#22D3EE;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="id-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="avatar-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22D3EE;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#id-bg)" rx="12"/>
+  <rect x="1" y="1" width="798" height="198" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#22D3EE" stroke-width="0.3">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="200" y1="0" x2="200" y2="200"/>
+    <line x1="400" y1="0" x2="400" y2="200"/>
+    <line x1="600" y1="0" x2="600" y2="200"/>
+  </g>
+
+  <!-- Avatar glow -->
+  <circle cx="120" cy="100" r="50" fill="url(#avatar-glow)"/>
+
+  <!-- Avatar ring -->
+  <circle cx="120" cy="100" r="42" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.6">
+    <animate attributeName="r" values="42;44;42" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="100" r="38" fill="#0D1117" stroke="#22D3EE" stroke-width="0.5" opacity="0.8"/>
+
+  <!-- Avatar text -->
+  <text x="120" y="108" text-anchor="middle" font-family="monospace" font-size="28" font-weight="bold" fill="#22D3EE" filter="url(#id-glow)">FM</text>
+
+  <!-- Rotating dots around avatar -->
+  <g opacity="0.6">
+    <circle cx="120" cy="56" r="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="164" cy="100" r="2" fill="#F59E0B">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="120" cy="144" r="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="76" cy="100" r="2" fill="#F59E0B">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+  </g>
+
+  <!-- Name & info -->
+  <g transform="translate(200, 0)">
+    <!-- Terminal-style name display -->
+    <rect x="0" y="30" width="560" height="140" rx="8" fill="#0D1117" stroke="#22D3EE" stroke-width="0.5" opacity="0.5"/>
+
+    <!-- Header bar -->
+    <rect x="0" y="30" width="560" height="24" rx="8" fill="#161B22" opacity="0.8"/>
+    <rect x="0" y="46" width="560" height="8" fill="#161B22"/>
+
+    <!-- Traffic lights -->
+    <circle cx="16" cy="42" r="4" fill="#FF5F56" opacity="0.8"/>
+    <circle cx="30" cy="42" r="4" fill="#FFBD2E" opacity="0.8"/>
+    <circle cx="44" cy="42" r="4" fill="#27C93F" opacity="0.8"/>
+
+    <!-- Terminal title -->
+    <text x="280" y="46" text-anchor="middle" font-family="monospace" font-size="10" fill="#8B949E">fardhan@github</text>
+
+    <!-- Name -->
+    <text x="20" y="80" font-family="monospace" font-size="22" font-weight="bold" fill="#F8FAFC" filter="url(#id-glow)">
+      <tspan fill="#22D3EE">$</tspan>
+      <tspan dx="10">Fardhan Marcello</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="20" y="105" font-family="monospace" font-size="12" fill="#94A3B8">
+      <tspan fill="#F59E0B">Full-Stack Developer</tspan>
+      <tspan dx="8" fill="#64748B">|</tspan>
+      <tspan dx="8">Laravel Enthusiast</tspan>
+      <tspan dx="8" fill="#64748B">|</tspan>
+      <tspan dx="8">Problem Solver</tspan>
+    </text>
+
+    <!-- Status line -->
+    <text x="20" y="130" font-family="monospace" font-size="10" fill="#64748B">
+      <tspan fill="#F59E0B">Status:</tspan>
+      <tspan dx="5" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+        Available for collaboration
+      </tspan>
+    </text>
+
+    <!-- Location -->
+    <text x="20" y="150" font-family="monospace" font-size="10" fill="#64748B">
+      <tspan fill="#F59E0B">Location:</tspan>
+      <tspan dx="5" fill="#94A3B8">Indonesia</tspan>
+      <tspan dx="20" fill="#F59E0B">Timezone:</tspan>
+      <tspan dx="5" fill="#94A3B8">WIB (UTC+7)</tspan>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="20" y="158" width="8" height="2" fill="#22D3EE" rx="1">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Corner decorations -->
+  <g stroke="#22D3EE" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M 15 15 L 15 30 M 15 15 L 30 15">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 785 15 L 785 30 M 785 15 L 770 15">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+    <path d="M 15 185 L 15 170 M 15 185 L 30 185">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
+    <path d="M 785 185 L 785 170 M 785 185 L 770 185">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </path>
+  </g>
+
+  <!-- Top accent line -->
+  <rect x="15" y="12" width="770" height="1" fill="url(#id-cyan)" opacity="0.4"/>
+
+  <!-- Floating particles -->
+  <circle cx="500" cy="40" r="1" fill="#22D3EE" opacity="0.4">
+    <animate attributeName="cy" values="40;160;40" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="120" r="1.2" fill="#F59E0B" opacity="0.3">
+    <animate attributeName="cy" values="120;30;120" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="80" r="0.8" fill="#22D3EE" opacity="0.5">
+    <animate attributeName="cy" values="80;170;80" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

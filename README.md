@@ -33,7 +33,7 @@
 <div align="center">
 
   <!-- ANIMATED TECH STACK -->
-  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/tech-stack-animated.svg" alt="Fardhan Technology Arsenal - PHP, Laravel, JavaScript, Blade, HTML, CSS, MySQL, Git" />
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/tech-stack-animated.svg" alt="Fardhan Technology Arsenal" />
 
 </div>
 
@@ -41,8 +41,8 @@
 
 <div align="center">
 
-  <!-- ANIMATED PROJECT SHOWCASE -->
-  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/projects-animated.svg" alt="Fardhan Selected Projects" />
+  <!-- SELECTED PROJECTS PANEL -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/projects-panel.svg" alt="Fardhan Selected Projects" />
 
 </div>
 
@@ -56,12 +56,35 @@
 
 </div>
 
+<div align="center">
+
+  <!-- PROJECT LINKS -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/project-links.svg" alt="Selected project links" />
+
+</div>
+
 <br/>
 
 <div align="center">
 
-  <!-- ANIMATED SOCIAL LINKS -->
-  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/social-animated.svg" alt="Fardhan Open Channels - Email, GitHub, Portfolio" />
+  <!-- ANIMATED PROJECT SHOWCASE -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/projects-animated.svg" alt="Fardhan Project Details" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+  <!-- OPEN CHANNELS PANEL -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/channels-panel.svg" alt="Fardhan Open Channels" />
+
+</div>
+
+<div align="center">
+
+  <!-- CHANNEL LINKS -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/channel-links.svg" alt="Direct social uplinks" />
 
 </div>
 
@@ -70,6 +93,15 @@
   <!-- SOCIAL BADGES -->
   <a href="mailto:marcellofardhan6@gmail.com"><img src="https://img.shields.io/badge/EMAIL-21100A?style=for-the-badge&logo=gmail&logoColor=F59E0B&labelColor=21100A" alt="Email Fardhan" /></a>
   <a href="https://github.com/marcellofardhan6-cell"><img src="https://img.shields.io/badge/GITHUB-21100A?style=for-the-badge&logo=github&logoColor=F59E0B&labelColor=21100A" alt="Fardhan on GitHub" /></a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+  <!-- ANIMATED SOCIAL LINKS -->
+  <img width="100%" src="https://raw.githubusercontent.com/marcellofardhan6-cell/marcellofardhan6-cell/main/assets/social-animated.svg" alt="Fardhan Social Links" />
 
 </div>
 

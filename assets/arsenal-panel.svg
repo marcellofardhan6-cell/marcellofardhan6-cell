@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
+  <defs>
+    <linearGradient id="ars-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="50%" style="stop-color:#0D1B2A"/>
+      <stop offset="100%" style="stop-color:#080B12"/>
+    </linearGradient>
+    <filter id="ars-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="180" fill="url(#ars-bg)" rx="12"/>
+  <rect x="1" y="1" width="798" height="178" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="13" fill="#22D3EE" filter="url(#ars-glow)">
+    <tspan opacity="0.5">///</tspan>
+    <tspan dx="10">TECHNOLOGY ARSENAL</tspan>
+    <tspan dx="10" opacity="0.5">///</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <line x1="300" y1="38" x2="500" y2="38" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Tech icons with wave bounce -->
+  <!-- PHP -->
+  <g transform="translate(80, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#777BB4" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#777BB4">P</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">PHP</text>
+    <animate attributeName="transform" values="translate(80,85);translate(80,80);translate(80,85)" dur="2s" repeatCount="indefinite" begin="0s"/>
+  </g>
+
+  <!-- Laravel -->
+  <g transform="translate(170, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#FF2D20" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#FF2D20">L</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">LARAVEL</text>
+    <animate attributeName="transform" values="translate(170,85);translate(170,80);translate(170,85)" dur="2s" repeatCount="indefinite" begin="0.15s"/>
+  </g>
+
+  <!-- JavaScript -->
+  <g transform="translate(260, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#F7DF1E" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#F7DF1E">JS</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">JS</text>
+    <animate attributeName="transform" values="translate(260,85);translate(260,80);translate(260,85)" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </g>
+
+  <!-- Blade -->
+  <g transform="translate(350, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#EF4444">B</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">BLADE</text>
+    <animate attributeName="transform" values="translate(350,85);translate(350,80);translate(350,85)" dur="2s" repeatCount="indefinite" begin="0.45s"/>
+  </g>
+
+  <!-- HTML -->
+  <g transform="translate(440, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#E34F26" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#E34F26">H</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">HTML</text>
+    <animate attributeName="transform" values="translate(440,85);translate(440,80);translate(440,85)" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+  </g>
+
+  <!-- CSS -->
+  <g transform="translate(530, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#1572B6" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#1572B6">C</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">CSS</text>
+    <animate attributeName="transform" values="translate(530,85);translate(530,80);translate(530,85)" dur="2s" repeatCount="indefinite" begin="0.75s"/>
+  </g>
+
+  <!-- MySQL -->
+  <g transform="translate(620, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#4479A1" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#4479A1">M</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">MYSQL</text>
+    <animate attributeName="transform" values="translate(620,85);translate(620,80);translate(620,85)" dur="2s" repeatCount="indefinite" begin="0.9s"/>
+  </g>
+
+  <!-- Git -->
+  <g transform="translate(710, 85)">
+    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#0D1117" stroke="#F05032" stroke-width="1" opacity="0.8"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="24" font-weight="bold" fill="#F05032">G</text>
+    <text x="0" y="50" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">GIT</text>
+    <animate attributeName="transform" values="translate(710,85);translate(710,80);translate(710,85)" dur="2s" repeatCount="indefinite" begin="1.05s"/>
+  </g>
+
+  <!-- Bottom wave -->
+  <path d="M 0 160 Q 100 150 200 160 T 400 160 T 600 160 T 800 160" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="d" values="M 0 160 Q 100 150 200 160 T 400 160 T 600 160 T 800 160;M 0 160 Q 100 170 200 160 T 400 160 T 600 160 T 800 160;M 0 160 Q 100 150 200 160 T 400 160 T 600 160 T 800 160" dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>

@@ -1,0 +1,28 @@
+name: Generate Galaga Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate galaga contribution graph
+        uses: archernedev/galaga-contribution-graph@v1
+        with:
+          github_username: marcellofardhan6-cell
+          theme: dark
+          output_path: output/
+
+      - name: Deploy output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

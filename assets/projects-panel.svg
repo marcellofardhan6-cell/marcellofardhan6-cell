@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80">
+  <defs>
+    <linearGradient id="proj-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="100%" style="stop-color:#0D1B2A"/>
+    </linearGradient>
+    <filter id="proj-glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="80" fill="url(#proj-bg2)" rx="12"/>
+  <rect x="1" y="1" width="798" height="78" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="13" fill="#22D3EE" filter="url(#proj-glow2)">
+    <tspan opacity="0.5">///</tspan>
+    <tspan dx="10">SELECTED PROJECTS</tspan>
+    <tspan dx="10" opacity="0.5">///</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative scan line -->
+  <rect x="0" y="0" width="800" height="1" fill="#22D3EE" opacity="0.15">
+    <animate attributeName="y" values="0;78;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <line x1="300" y1="40" x2="500" y2="40" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="400" y="60" text-anchor="middle" font-family="monospace" font-size="10" fill="#94A3B8">
+    <tspan fill="#22D3EE">4</tspan> repositories
+    <tspan dx="10" fill="#F59E0B">|</tspan>
+    <tspan dx="10">Crafted with precision</tspan>
+  </text>
+</svg>
