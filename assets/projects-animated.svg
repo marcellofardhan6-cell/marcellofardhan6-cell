@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
+  <defs>
+    <linearGradient id="proj-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="50%" style="stop-color:#0D1B2A"/>
+      <stop offset="100%" style="stop-color:#080B12"/>
+    </linearGradient>
+    <linearGradient id="proj-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22D3EE"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+    <filter id="proj-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="proj-glow-strong">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="scan-clip">
+      <rect x="0" y="0" width="800" height="320"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="320" fill="url(#proj-bg)" rx="12"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="798" height="318" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Section title -->
+  <text x="400" y="32" text-anchor="middle" font-family="monospace" font-size="13" fill="#22D3EE" filter="url(#proj-glow)">
+    <tspan opacity="0.5">///</tspan>
+    <tspan dx="10">SELECTED PROJECTS</tspan>
+    <tspan dx="10" opacity="0.5">///</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Horizontal scan line -->
+  <rect x="0" y="0" width="800" height="1" fill="#22D3EE" opacity="0.2" clip-path="url(#scan-clip)">
+    <animate attributeName="y" values="0;318;0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.35;0.1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Project cards -->
+  <g transform="translate(0, 0)">
+
+    <!-- Project 1: CrisisConnect -->
+    <g transform="translate(30, 55)">
+      <rect x="0" y="0" width="355" height="115" rx="8" fill="#0D1117" stroke="#22D3EE" stroke-width="0.8" opacity="0.9">
+        <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card number -->
+      <rect x="0" y="0" width="36" height="115" rx="8" fill="#22D3EE" opacity="0.1"/>
+      <rect x="28" y="0" width="8" height="115" fill="#22D3EE" opacity="0.1"/>
+      <text x="18" y="62" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#22D3EE" filter="url(#proj-glow)">01</text>
+
+      <!-- Project info -->
+      <text x="52" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#F8FAFC" filter="url(#proj-glow)">
+        <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+        CrisisConnect
+      </text>
+      <text x="52" y="48" font-family="monospace" font-size="10" fill="#94A3B8">Aplikasi Lapor Bencana Alam</text>
+      <text x="52" y="65" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#F59E0B">Status:</tspan> Production
+      </text>
+      <text x="52" y="82" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#F59E0B">Stack:</tspan> Laravel + Blade
+      </text>
+
+      <!-- Status indicator -->
+      <circle cx="330" cy="20" r="4" fill="#22D3EE" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Decorative lines -->
+      <line x1="52" y1="92" x2="340" y2="92" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+      <rect x="52" y="98" width="80" height="3" rx="1.5" fill="#22D3EE" opacity="0.2"/>
+      <rect x="140" y="98" width="50" height="3" rx="1.5" fill="#F59E0B" opacity="0.2"/>
+    </g>
+
+    <!-- Project 2: Stockly -->
+    <g transform="translate(415, 55)">
+      <rect x="0" y="0" width="355" height="115" rx="8" fill="#0D1117" stroke="#F59E0B" stroke-width="0.8" opacity="0.9">
+        <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+      </rect>
+      <rect x="0" y="0" width="36" height="115" rx="8" fill="#F59E0B" opacity="0.1"/>
+      <rect x="28" y="0" width="8" height="115" fill="#F59E0B" opacity="0.1"/>
+      <text x="18" y="62" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#F59E0B" filter="url(#proj-glow)">02</text>
+
+      <text x="52" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#F8FAFC" filter="url(#proj-glow)">
+        <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+        Stockly
+      </text>
+      <text x="52" y="48" font-family="monospace" font-size="10" fill="#94A3B8">Aplikasi Manajemen Stock</text>
+      <text x="52" y="65" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#F59E0B">Status:</tspan> Production
+      </text>
+      <text x="52" y="82" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#F59E0B">Stack:</tspan> Laravel + Blade
+      </text>
+
+      <circle cx="330" cy="20" r="4" fill="#F59E0B" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+
+      <line x1="52" y1="92" x2="340" y2="92" stroke="#F59E0B" stroke-width="0.3" opacity="0.3"/>
+      <rect x="52" y="98" width="60" height="3" rx="1.5" fill="#F59E0B" opacity="0.2"/>
+      <rect x="120" y="98" width="90" height="3" rx="1.5" fill="#22D3EE" opacity="0.2"/>
+    </g>
+
+    <!-- Project 3: Todo-List -->
+    <g transform="translate(30, 185)">
+      <rect x="0" y="0" width="355" height="115" rx="8" fill="#0D1117" stroke="#EF4444" stroke-width="0.8" opacity="0.9">
+        <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="1s"/>
+      </rect>
+      <rect x="0" y="0" width="36" height="115" rx="8" fill="#EF4444" opacity="0.1"/>
+      <rect x="28" y="0" width="8" height="115" fill="#EF4444" opacity="0.1"/>
+      <text x="18" y="62" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#EF4444" filter="url(#proj-glow)">03</text>
+
+      <text x="52" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#F8FAFC" filter="url(#proj-glow)">
+        <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+        Todo-List
+      </text>
+      <text x="52" y="48" font-family="monospace" font-size="10" fill="#94A3B8">Task Management Application</text>
+      <text x="52" y="65" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#EF4444">Status:</tspan> Development
+      </text>
+      <text x="52" y="82" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#EF4444">Stack:</tspan> Laravel + Blade
+      </text>
+
+      <circle cx="330" cy="20" r="4" fill="#EF4444" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+
+      <line x1="52" y1="92" x2="340" y2="92" stroke="#EF4444" stroke-width="0.3" opacity="0.3"/>
+      <rect x="52" y="98" width="100" height="3" rx="1.5" fill="#EF4444" opacity="0.2"/>
+      <rect x="160" y="98" width="40" height="3" rx="1.5" fill="#22D3EE" opacity="0.2"/>
+    </g>
+
+    <!-- Project 4: Fardhan -->
+    <g transform="translate(415, 185)">
+      <rect x="0" y="0" width="355" height="115" rx="8" fill="#0D1117" stroke="#22D3EE" stroke-width="0.8" opacity="0.9">
+        <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+      </rect>
+      <rect x="0" y="0" width="36" height="115" rx="8" fill="#22D3EE" opacity="0.1"/>
+      <rect x="28" y="0" width="8" height="115" fill="#22D3EE" opacity="0.1"/>
+      <text x="18" y="62" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#22D3EE" filter="url(#proj-glow)">04</text>
+
+      <text x="52" y="28" font-family="monospace" font-size="14" font-weight="bold" fill="#F8FAFC" filter="url(#proj-glow)">
+        <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+        Fardhan
+      </text>
+      <text x="52" y="48" font-family="monospace" font-size="10" fill="#94A3B8">Personal Portfolio / Identity</text>
+      <text x="52" y="65" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#22D3EE">Status:</tspan> Active
+      </text>
+      <text x="52" y="82" font-family="monospace" font-size="9" fill="#64748B">
+        <tspan fill="#22D3EE">Type:</tspan> Profile Repository
+      </text>
+
+      <circle cx="330" cy="20" r="4" fill="#22D3EE" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" begin="1.5s"/>
+        <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+
+      <line x1="52" y1="92" x2="340" y2="92" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+      <rect x="52" y="98" width="70" height="3" rx="1.5" fill="#22D3EE" opacity="0.2"/>
+      <rect x="130" y="98" width="110" height="3" rx="1.5" fill="#F59E0B" opacity="0.2"/>
+    </g>
+
+  </g>
+</svg>

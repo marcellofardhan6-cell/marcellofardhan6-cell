@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" width="800" height="140">
+  <defs>
+    <linearGradient id="social-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="100%" style="stop-color:#0D1B2A"/>
+    </linearGradient>
+    <filter id="social-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="pulse-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="140" fill="url(#social-bg)" rx="12"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="798" height="138" rx="11" fill="none" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Section title -->
+  <text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="13" fill="#F59E0B" filter="url(#social-glow)">
+    <tspan opacity="0.5">///</tspan>
+    <tspan dx="10">OPEN CHANNELS</tspan>
+    <tspan dx="10" opacity="0.5">///</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Social links row -->
+  <g transform="translate(0, 0)">
+
+    <!-- Email -->
+    <g transform="translate(170, 80)">
+      <!-- Pulse ring -->
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#F59E0B" stroke-width="0.5" opacity="0">
+        <animate attributeName="r" values="28;40;28" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Icon background -->
+      <circle cx="0" cy="0" r="28" fill="#0D1117" stroke="#F59E0B" stroke-width="1" filter="url(#pulse-glow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Envelope icon -->
+      <rect x="-12" y="-8" width="24" height="16" rx="2" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+      <path d="M -12 -8 L 0 2 L 12 -8" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+      <!-- Label -->
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="10" fill="#F59E0B" filter="url(#social-glow)">EMAIL</text>
+      <text x="0" y="62" text-anchor="middle" font-family="monospace" font-size="7" fill="#64748B">marcellofardhan6@gmail.com</text>
+      <!-- Pulsing dot -->
+      <circle cx="18" cy="-18" r="3" fill="#F59E0B">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- GitHub -->
+    <g transform="translate(400, 80)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0">
+        <animate attributeName="r" values="28;40;28" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <circle cx="0" cy="0" r="28" fill="#0D1117" stroke="#22D3EE" stroke-width="1" filter="url(#pulse-glow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <!-- GitHub icon (simplified) -->
+      <path d="M -10 -6 C -10 -12 -6 -16 0 -16 C 6 -16 10 -12 10 -6 C 10 0 6 4 0 4 C -2 4 -4 4 -6 4 L -6 6 C -6 8 -4 10 -2 10 L 2 10" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+      <circle cx="-4" cy="-4" r="2" fill="#22D3EE"/>
+      <circle cx="4" cy="-4" r="2" fill="#22D3EE"/>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="10" fill="#22D3EE" filter="url(#social-glow)">GITHUB</text>
+      <text x="0" y="62" text-anchor="middle" font-family="monospace" font-size="7" fill="#64748B">@marcellofardhan6-cell</text>
+      <circle cx="18" cy="-18" r="3" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+    </g>
+
+    <!-- Portfolio -->
+    <g transform="translate(630, 80)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#F59E0B" stroke-width="0.5" opacity="0">
+        <animate attributeName="r" values="28;40;28" dur="3s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <circle cx="0" cy="0" r="28" fill="#0D1117" stroke="#F59E0B" stroke-width="1" filter="url(#pulse-glow)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <!-- Globe icon -->
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="5" ry="10" fill="none" stroke="#F59E0B" stroke-width="1"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#F59E0B" stroke-width="1"/>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="10" fill="#F59E0B" filter="url(#social-glow)">PORTFOLIO</text>
+      <text x="0" y="62" text-anchor="middle" font-family="monospace" font-size="7" fill="#64748B">marcellofardhan.vercel.app</text>
+      <circle cx="18" cy="-18" r="3" fill="#F59E0B">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+    </g>
+
+  </g>
+
+  <!-- Connection lines between social icons -->
+  <line x1="198" y1="80" x2="372" y2="80" stroke="#22D3EE" stroke-width="0.3" opacity="0.3" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="428" y1="80" x2="602" y2="80" stroke="#F59E0B" stroke-width="0.3" opacity="0.3" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+  </line>
+</svg>

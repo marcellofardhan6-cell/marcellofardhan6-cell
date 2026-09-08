@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="tech-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080B12"/>
+      <stop offset="100%" style="stop-color:#0D1B2A"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22D3EE"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+    <filter id="tech-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="tech-glow-strong">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#tech-bg)" rx="12"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="798" height="198" rx="11" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Section title -->
+  <text x="400" y="32" text-anchor="middle" font-family="monospace" font-size="13" fill="#22D3EE" filter="url(#tech-glow)">
+    <tspan opacity="0.5">///</tspan>
+    <tspan dx="10">TECHNOLOGY ARSENAL</tspan>
+    <tspan dx="10" opacity="0.5">///</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative line under title -->
+  <line x1="300" y1="42" x2="500" y2="42" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Tech icons row -->
+  <g transform="translate(0, 0)">
+
+    <!-- PHP -->
+    <g transform="translate(80, 90)" filter="url(#tech-glow)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#777BB4" stroke-width="1" opacity="0.8">
+        <animate attributeName="y" values="-28;-32;-28" dur="2s" repeatCount="indefinite" begin="0s"/>
+      </rect>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#777BB4">P</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">PHP</text>
+      <animate attributeName="transform" values="translate(80,90);translate(80,86);translate(80,90)" dur="2s" repeatCount="indefinite" begin="0s"/>
+    </g>
+
+    <!-- Laravel -->
+    <g transform="translate(170, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#FF2D20" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#FF2D20">L</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">LARAVEL</text>
+      <animate attributeName="transform" values="translate(170,90);translate(170,86);translate(170,90)" dur="2s" repeatCount="indefinite" begin="0.15s"/>
+    </g>
+
+    <!-- JavaScript -->
+    <g transform="translate(260, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#F7DF1E" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#F7DF1E">JS</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">JS</text>
+      <animate attributeName="transform" values="translate(260,90);translate(260,86);translate(260,90)" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+    </g>
+
+    <!-- Blade -->
+    <g transform="translate(350, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#EF4444">B</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">BLADE</text>
+      <animate attributeName="transform" values="translate(350,90);translate(350,86);translate(350,90)" dur="2s" repeatCount="indefinite" begin="0.45s"/>
+    </g>
+
+    <!-- HTML -->
+    <g transform="translate(440, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#E34F26" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#E34F26">H</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">HTML</text>
+      <animate attributeName="transform" values="translate(440,90);translate(440,86);translate(440,90)" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+    </g>
+
+    <!-- CSS -->
+    <g transform="translate(530, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#1572B6" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#1572B6">C</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">CSS</text>
+      <animate attributeName="transform" values="translate(530,90);translate(530,86);translate(530,90)" dur="2s" repeatCount="indefinite" begin="0.75s"/>
+    </g>
+
+    <!-- MySQL -->
+    <g transform="translate(620, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#4479A1" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#4479A1">M</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">MYSQL</text>
+      <animate attributeName="transform" values="translate(620,90);translate(620,86);translate(620,90)" dur="2s" repeatCount="indefinite" begin="0.9s"/>
+    </g>
+
+    <!-- Git -->
+    <g transform="translate(710, 90)">
+      <rect x="-28" y="-28" width="56" height="56" rx="10" fill="#0D1117" stroke="#F05032" stroke-width="1" opacity="0.8"/>
+      <text x="0" y="6" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#F05032">G</text>
+      <text x="0" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">GIT</text>
+      <animate attributeName="transform" values="translate(710,90);translate(710,86);translate(710,90)" dur="2s" repeatCount="indefinite" begin="1.05s"/>
+    </g>
+
+  </g>
+
+  <!-- Bottom wave decoration -->
+  <path d="M 0 180 Q 100 170 200 180 T 400 180 T 600 180 T 800 180" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="d" values="M 0 180 Q 100 170 200 180 T 400 180 T 600 180 T 800 180;M 0 180 Q 100 190 200 180 T 400 180 T 600 180 T 800 180;M 0 180 Q 100 170 200 180 T 400 180 T 600 180 T 800 180" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 0 185 Q 100 175 200 185 T 400 185 T 600 185 T 800 185" fill="none" stroke="#F59E0B" stroke-width="0.3" opacity="0.2">
+    <animate attributeName="d" values="M 0 185 Q 100 175 200 185 T 400 185 T 600 185 T 800 185;M 0 185 Q 100 195 200 185 T 400 185 T 600 185 T 800 185;M 0 185 Q 100 175 200 185 T 400 185 T 600 185 T 800 185" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Pulsing dots on the wave -->
+  <circle cx="200" cy="180" r="2" fill="#22D3EE" opacity="0.5">
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="180" r="2" fill="#F59E0B" opacity="0.5">
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+  </circle>
+  <circle cx="600" cy="180" r="2" fill="#22D3EE" opacity="0.5">
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+  </circle>
+</svg>
